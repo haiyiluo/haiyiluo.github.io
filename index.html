@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的研究网站</title>
+    <title>My Research Website</title>
     <style>
-        /* 这是CSS - 控制网页的外观 */
+        /* This is CSS - controls the appearance of the webpage */
         body {
             font-family: Arial, sans-serif;
             max-width: 800px;
@@ -42,42 +42,41 @@
     </style>
 </head>
 <body>
-    <h1>抵抗级联研究</h1>
+    <h1>Resistance Cascade Research</h1>
     
     <div class="section">
-        <h2>关于这个项目</h2>
-        <p>这是一个研究社会运动如何传播的项目。我使用计算机模型和深度访谈来理解抗议活动的动态过程。</p>
+        <h2>About This Project</h2>
+        <p>This is a project researching how social movements spread. I use computer models and in-depth interviews to understand the dynamics of protest activities.</p>
     </div>
     
     <div class="section">
-        <h2>互动模型</h2>
-        <p>点击下面的按钮查看抵抗级联模型：</p>
-        <button onclick="alert('模型即将上线！')">打开模型</button>
+        <h2>Interactive Model</h2>
+        <p>Click the button below to view the resistance cascade model:</p>
+        <button onclick="alert('Model coming soon!')">Open Model</button>
     </div>
     
     <div class="section">
-        <h2>访谈档案</h2>
-        <p>我采访了来自不同国家的47位参与者，了解他们的经历和观察。</p>
+        <h2>Interview Archive</h2>
+        <p>I interviewed 12 participants from different countries to understand their experiences and observations.</p>
         <ul>
-            <li>突尼斯 - 12 份访谈</li>
-            <li>香港 - 15 份访谈</li>
-            <li>白俄罗斯 - 10 份访谈</li>
-            <li>缅甸 - 10 份访谈</li>
+            <li>Hong Kong - 9 interviews</li>
+            <li>United Kingdom - 1 interview</li>
+            <li>Mainland China - 2 interviews</li>
         </ul>
     </div>
     
     <script>
-        // 这是JavaScript - 添加交互功能
-        console.log("网站加载完成！");
+        // This is JavaScript - adds interactive functionality
+        console.log("Website loaded successfully!");
     </script>
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>互动模型 - 抵抗级联</title>
+    <title>Interactive Model - Resistance Cascade</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -142,7 +141,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        /* Streamlit嵌入框架样式 */
+        /* Streamlit embedded frame styles */
         .streamlit-frame {
             width: 100%;
             height: 800px;
@@ -168,7 +167,7 @@
             text-decoration: underline;
         }
         
-        /* 响应式设计 */
+        /* Responsive design */
         @media (max-width: 768px) {
             .streamlit-frame {
                 height: 600px;
@@ -183,42 +182,42 @@
 </head>
 <body>
     <div class="header">
-        <h1>抵抗级联互动模型</h1>
-        <p>探索抗议活动如何在人群中传播</p>
+        <h1>Resistance Cascade Interactive Model</h1>
+        <p>Explore how protest activities spread through populations</p>
     </div>
     
     <nav>
         <ul>
-            <li><a href="index.html">主页</a></li>
-            <li><a href="interviews.html">访谈档案</a></li>
-            <li><a href="model.html" style="background-color: #555;">互动模型</a></li>
-            <li><a href="#research">研究成果</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="interviews.html">Interview Archive</a></li>
+            <li><a href="model.html" style="background-color: #555;">Interactive Model</a></li>
+            <li><a href="#research">Research Findings</a></li>
         </ul>
     </nav>
     
     <div class="container">
         <div class="model-info">
-            <h2>使用说明</h2>
-            <p>这个互动模型展示了抗议活动如何像"传染病"一样在人群中传播。你可以：</p>
+            <h2>Instructions</h2>
+            <p>This interactive model demonstrates how protest activities spread through populations like "infectious diseases." You can:</p>
             <ul>
-                <li>调整左侧的参数滑块</li>
-                <li>点击"开始模拟"运行模型</li>
-                <li>观察图表中人群状态的变化</li>
-                <li>尝试不同的参数组合，找出导致"革命"的条件</li>
+                <li>Adjust parameter sliders on the left side</li>
+                <li>Click "Start Simulation" to run the model</li>
+                <li>Observe changes in population states in the charts</li>
+                <li>Try different parameter combinations to identify conditions leading to "revolution"</li>
             </ul>
-            <a href="https://your-streamlit-app.streamlit.app" target="_blank" class="external-link">
-                ↗ 在新窗口中打开（推荐）
+            <a href="https://cicada.streamlit.app/" target="_blank" class="external-link">
+                ↗ Open in new window (recommended)
             </a>
         </div>
         
         <div class="model-frame-container">
             <div class="loading" id="loading">
-                模型加载中，请稍候...
+                Model loading, please wait...
             </div>
             <iframe 
                 id="modelFrame"
                 class="streamlit-frame" 
-                src="https://your-streamlit-app.streamlit.app/?embedded=true"
+                src="https://cicada.streamlit.app/?embedded=true"
                 onload="document.getElementById('loading').style.display='none';"
             >
             </iframe>
@@ -226,12 +225,12 @@
     </div>
     
     <script>
-        // 检查iframe是否加载成功
+        // Check if iframe loads successfully
         window.addEventListener('load', function() {
             setTimeout(function() {
                 var loading = document.getElementById('loading');
                 if (loading.style.display !== 'none') {
-                    loading.innerHTML = '如果模型没有加载，请<a href="https://your-streamlit-app.streamlit.app" target="_blank">点击这里</a>在新窗口打开';
+                    loading.innerHTML = 'If the model fails to load, please <a href="https://cicada.streamlit.app/" target="_blank">click here</a> to open in a new window';
                 }
             }, 5000);
         });
