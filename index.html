@@ -3,93 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Research Website</title>
+    <title>Resistance Cascade Research</title>
     <style>
         /* This is CSS - controls the appearance of the webpage */
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        
-        h1 {
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        
-        .section {
-            margin: 30px 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            border-radius: 10px;
-        }
-        
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <h1>Resistance Cascade Research</h1>
-    
-    <div class="section">
-        <h2>About This Project</h2>
-        <p>This is a project researching how social movements spread. I use computer models and in-depth interviews to understand the dynamics of protest activities.</p>
-    </div>
-    
-    
-    <div class="section">
-        <h2>Interview Archive</h2>
-        <p>I interviewed 12 participants from different countries to understand their experiences and observations.</p>
-        <ul>
-            <li>Hong Kong - 9 interviews</li>
-            <li>United Kingdom - 1 interview</li>
-            <li>Mainland China - 2 interviews</li>
-        </ul>
-    </div>
-    
-    <script>
-        // This is JavaScript - adds interactive functionality
-        console.log("Website loaded successfully!");
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Model - Resistance Cascade</title>
-    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            line-height: 1.6;
         }
         
         .header {
             background-color: #667eea;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            border: none;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
         }
         
         nav {
             background-color: #333;
             padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
         
         nav ul {
@@ -109,6 +58,7 @@
             color: white;
             text-decoration: none;
             padding: 15px 30px;
+            transition: background-color 0.3s;
         }
         
         nav a:hover {
@@ -118,116 +68,204 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         
-        .model-info {
+        .section {
+            margin: 30px 0;
+            padding: 30px;
             background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .model-frame-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        /* Streamlit embedded frame styles */
-        .streamlit-frame {
-            width: 100%;
-            height: 800px;
-            border: none;
-            border-radius: 10px;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 50px;
-            font-size: 18px;
-            color: #666;
-        }
-        
-        .external-link {
-            display: inline-block;
-            margin-top: 10px;
+        .section h2 {
             color: #667eea;
-            text-decoration: none;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
         }
         
-        .external-link:hover {
-            text-decoration: underline;
+        .section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .section ul {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .section ul li {
+            margin: 10px 0;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        
+        button {
+            background-color: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #5568d3;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 15px;
+        }
+        
+        .cta-button:hover {
+            background-color: #5568d3;
         }
         
         /* Responsive design */
         @media (max-width: 768px) {
-            .streamlit-frame {
-                height: 600px;
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .section {
+                padding: 20px;
             }
             
             nav a {
                 padding: 10px 15px;
                 font-size: 14px;
             }
+            
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Resistance Cascade Interactive Model</h1>
-        <p>Explore how protest activities spread through populations</p>
+        <h1>Resistance Cascade Research</h1>
+        <p>Understanding how social movements spread through populations</p>
     </div>
     
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" style="background-color: #555;">Home</a></li>
             <li><a href="interviews.html">Interview Archive</a></li>
-            <li><a href="model.html" style="background-color: #555;">Interactive Model</a></li>
+            <li><a href="model.html">Interactive Model</a></li>
             <li><a href="#research">Research Findings</a></li>
         </ul>
     </nav>
     
     <div class="container">
-        <div class="model-info">
-            <h2>Instructions</h2>
-            <p>This interactive model demonstrates how protest activities spread through populations like "infectious diseases." You can:</p>
+        <div class="section">
+            <h2>About This Project</h2>
+            <p>This research project explores how social movements and protest activities spread through populations using a combination of computational modeling and qualitative interviews. By understanding the mechanisms of "resistance cascades," we can better comprehend the dynamics of collective action and social change.</p>
+            <p>The project uses an interdisciplinary approach, combining:</p>
             <ul>
-                <li>Adjust parameter sliders on the left side</li>
-                <li>Click "Start Simulation" to run the model</li>
-                <li>Observe changes in population states in the charts</li>
-                <li>Try different parameter combinations to identify conditions leading to "revolution"</li>
+                <li><strong>Computational Modeling:</strong> Mathematical simulations showing how protest participation spreads like an epidemic through social networks</li>
+                <li><strong>In-depth Interviews:</strong> First-hand accounts from participants in resistance movements across different countries</li>
+                <li><strong>Comparative Analysis:</strong> Understanding how different contexts shape movement dynamics and outcomes</li>
             </ul>
-            <a href="https://cicada.streamlit.app/" target="_blank" class="external-link">
-                ↗ Open in new window (recommended)
-            </a>
         </div>
         
-        <div class="model-frame-container">
-            <div class="loading" id="loading">
-                Model loading, please wait...
+        <div class="grid-container">
+            <div class="card">
+                <h3>📊 Interactive Model</h3>
+                <p>Explore our computational model that simulates how protest activities spread through populations. Adjust parameters and observe how different conditions lead to different outcomes.</p>
+                <a href="model.html" class="cta-button">Try the Model →</a>
             </div>
-            <iframe 
-                id="modelFrame"
-                class="streamlit-frame" 
-                src="https://cicada.streamlit.app/?embedded=true"
-                onload="document.getElementById('loading').style.display='none';"
-            >
-            </iframe>
+            
+            <div class="card">
+                <h3>🎙️ Interview Archive</h3>
+                <p>Read transcripts from 12 in-depth interviews with participants from Hong Kong, the UK, and Mainland China about their experiences in resistance movements.</p>
+                <a href="interviews.html" class="cta-button">View Interviews →</a>
+            </div>
+            
+            <div class="card">
+                <h3>📚 Research Findings</h3>
+                <p>Discover insights from our analysis combining computational modeling with qualitative data to understand the mechanisms of social movement diffusion.</p>
+                <a href="#research" class="cta-button">Read Findings →</a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Research Overview</h2>
+            <p>This project examines the 2019 Hong Kong protests and other resistance movements to understand:</p>
+            <ul>
+                <li>How individual decisions to participate are influenced by social networks and peer behavior</li>
+                <li>The role of "threshold effects" where critical mass triggers rapid mobilization</li>
+                <li>Differences between peaceful and confrontational tactics in movement dynamics</li>
+                <li>How state repression and violence affect protest trajectories</li>
+                <li>The relationship between civic duty, justice, and civil disobedience</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Interview Sample</h2>
+            <p>We conducted interviews with 12 participants from different backgrounds and locations:</p>
+            <ul>
+                <li><strong>Hong Kong (9 interviews):</strong> Direct participants in 2014 and 2019 movements, ranging from students to legal professionals</li>
+                <li><strong>United Kingdom (1 interview):</strong> Diaspora perspective on solidarity movements</li>
+                <li><strong>Mainland China (2 interviews):</strong> Observers and digital activists operating under different constraints</li>
+            </ul>
+            <p><em>All interviews have been anonymized to protect participant identities.</em></p>
         </div>
     </div>
     
     <script>
-        // Check if iframe loads successfully
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                var loading = document.getElementById('loading');
-                if (loading.style.display !== 'none') {
-                    loading.innerHTML = 'If the model fails to load, please <a href="https://cicada.streamlit.app/" target="_blank">click here</a> to open in a new window';
+        // This is JavaScript - adds interactive functionality
+        console.log("Website loaded successfully!");
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
-            }, 5000);
+            });
         });
     </script>
 </body>
