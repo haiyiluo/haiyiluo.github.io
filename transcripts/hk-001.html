@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview ANON-01 - Resistance Cascade Research</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            line-height: 1.8;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #667eea;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .transcript-header {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .transcript-id {
+            color: #667eea;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        
+        .transcript-title {
+            font-size: 28px;
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .metadata {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .speaker {
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .interviewer {
+            color: #333;
+        }
+        
+        .response {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .redacted {
+            background-color: #000;
+            color: #000;
+            padding: 0 5px;
+            cursor: help;
+        }
+        
+        .redacted:hover::after {
+            content: " [REDACTED FOR PRIVACY]";
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 2px 5px;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        
+        .timestamp {
+            color: #999;
+            font-size: 12px;
+            font-family: monospace;
+        }
+        
+        .note {
+            background-color: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 10px 15px;
+            margin: 20px 0;
+            font-style: italic;
+            font-size: 14px;
+        }
+        
+        .context-box {
+            background-color: #f0f0f0;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        
+        .context-box h4 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content, .transcript-header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../interviews.html" class="back-link">← Back to Interview Archive</a>
+    
+    <div class="transcript-header">
+        <div class="transcript-id">INTERVIEW ANON-01</div>
+        <h1 class="transcript-title">Hong Kong Law Student - Umbrella Movement & 2019 Protests</h1>
+        <div class="metadata">
+            <div class="metadata-item">📅 Date: [Date Redacted for Privacy]</div>
+            <div class="metadata-item">⏱️ Duration: ~60 minutes (First Session)</div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="note">
+            <strong>Participant Background:</strong> Hong Kong native who attended English-language local schools and was pursuing a law degree at the time of the interview. They were at boarding school in the UK during the 2014 Umbrella Movement but directly participated in the 2019 protests while at university in Hong Kong. Interview conducted with two researchers (Iris and Ronald) and includes discussion of civil disobedience, rule of law, and evolving perspectives on democratic movements.
+        </div>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:00:02]</span></p>
+        <p class="response">Thank you so much. Can you maybe begin the interview with maybe just a brief introduction of your involvement in Hong Kong and a little bit about your background.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:00:12]</span></p>
+        <p class="response">I was at a university. Relating to the protests, right?</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:00:17]</span></p>
+        <p class="response">No, sorry. Just in general, like where you were born.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:00:21]</span></p>
+        <p class="response">How did you go? Okay. I was born and raised in Hong Kong. I went to school; English schools. But local schools in Hong Kong. And then, subsequently university. And during the protests, I was in university.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:00:57]</span></p>
+        <p class="response">I'll just generally focus on, like, the protests and national identity. So because that's what my research is focused on. Ronald can ask the other questions related to the interview. So because last time we talked about your general perception of the protests and some backgrounds. So this time I want to focus more on the protests itself. And then, your experience and your feelings. Let's go back to 2014, the Umbrella movement. Where were you in your life back then? And what will you remember most clearly about that time?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:01:56]</span></p>
+        <p class="response">So I was actually in boarding school in the UK during 2014. What I know mostly are from my friends' involvement. I know people who are student leaders directly in the movement who were arrested and subsequently convicted for participating in the protest. But I was based in the UK. And I wasn't directly involved. But of course we stayed close to the news and we talked to people who were involved in 2014.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:02:33]</span></p>
+        <p class="response">Thank you. What was your first impression of the movement in 2014?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:02:38]</span></p>
+        <p class="response">Umbrella movement. Actually, at first I was hesitant because, um, what I think. Well, now I changed my views to start, but back then, what I thought was Hong Kong is a commercial city, a financial centre, and occupying the main roads basically put everything to a halt. And it was quite dangerous because they're demanding China to give them something, but they are bargaining it with putting a knife on their own neck. Right.</p>
+        
+        <p class="response">So China wants Hong Kong as a financial city. And by making it difficult, it doesn't seem to help pushing China to fulfil their demands. So that was my first thought when I was teenager. I was less than 18 back then in boarding school.</p>
+        
+        <p class="response">But, um, I always say now my views have changed, because I don't think a democratic movement is only to advance a democratic cause. Of course it is. But, um. Getting the citizens involved, um, getting public intellectuals connected with the general public in these sorts of philosophies and discussing what is good for the city because like in, in the umbrella movement, it's very different from the 2019 movement.</p>
+        
+        <p class="response">They occupied the roads. But a lot of things were happening there. They have professors giving lectures and then they have forums. I don't know what to call it, but they are kind of like forums. And people would express their views, share their views and discuss what would be best: whether they would accept the government's new proposal, which eventually they decide not to. But there was a lot of citizen involvement. So it felt like it was a community, but it felt like the whole city, or at least a lot of people in the city are involved in the course, which is very meaningful because, in a lot of other cities and protests, it would be a group of people who are very enthusiastic and the general public will are less, um, aggressive, who are less, um, determined, may not want to be part of it.</p>
+        
+        <p class="response">But because the umbrella movement highlighted to be, in Chinese, 和理非 [peaceful, rational, and non-violent]. So it's peaceful, rational and non-violent, it kind of caused a lot of people to engage with it. And I think that was very meaningful in Hong Kong as a city and also in an intellectual international level, because this is not something that has happened before, at least maybe for a few decades. So is this sufficient or do you have more specific questions? Sorry, I'm not sure where I was going.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:05:28]</span></p>
+        <p class="response">I think it's a sufficient answer. And I'd also like to talk about the forums. I was just wondering because you were based in the UK. How were you able to know the forums? Are they are there like some, some um, some forms of it, like online or did you like about it from—</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:05:55]</span></p>
+        <p class="response">Basically because I was in the UK, but I have a lot of friends in Hong Kong and in the UK. Um, we, we were really we care about a lot. And then we talk about it and I, I have friends who are journalists back then. So I read directly from the reports and I would ask them for questions.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:06:14]</span></p>
+        <p class="response">Sorry, one question that I had is, um, from a UK perspective, what was the discourse around this event at that time? Um, maybe in your school, maybe in the journalist community, maybe, um, I'm not sure if you would feel comfortable making a statement about this, but maybe in the West, as a whole, how was the international community looking upon this event?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:06:32]</span></p>
+        <p class="response">Okay, so I don't know about the UK journalist university. Uh, community. I only talk about, um, how it was in my own school where it was an international school and people there were people from a lot of different nationalities. So basically what we did was, um, we had, uh, uh, not like a talk, but like a, not a seminar, but like a group. Group thing, basically. Um, people from Hong Kong, like group of students, uh, like maybe six of us. Um, we gave a presentation about what we think. We thought was going. Obviously, we weren't there. So what we could do was, um.</p>
+        
+        <p class="response">We gave a presentation of what we thought happened based on recollections from our friends. Based on news that, are in Chinese, that people don't have access to. And then, um, a lot of other information available to us basically.</p>
+        
+        <p class="response">Um, and then we engaged the other students to let them ask questions. And what was like and what I could say from teenagers perspective, obviously. Um, we were all very young. Um, and but also from international news that we read about the perceptions would be, um, would be people who are generally very supportive. Again, because it was peaceful, rational and non-violent, even though the government had some tear gas and other kind of more, um, not violent, but means with force. Basically. Um, the leader, if you understand Chinese.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:08:03]</span></p>
+        <p class="response">Yes.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:08:04]</span></p>
+        <p class="response">Yes, it's kind of force. Um, people remained calm and they were focussed with they were focussed with a single cause about asking for universal suffrage. That's very meaningful because a lot of things, even the 2019 protests. Um, they were kind of the calls were kind of turning to something else.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:08:28]</span></p>
+        <p class="response">Right?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:08:28]</span></p>
+        <p class="response">Right. Um, when when things happen, when people interact and according to protest theories. Even, um, like in, in the 2019 protest, it quickly turned into police violence. And then people got caught with different other motives and, um, ideologies. But in 2014, it wasn't it was kind of very united. And I think impressed the world.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:08:55]</span></p>
+        <p class="response">Um, if you don't mind me asking a follow up on that. Uh, what do you think is the difference between these two movements that maybe, like, by nature. Caused one to be more peaceful, more united than the other, and the other to, you know, very obviously become violent and maybe a mix of ideologies all at the same time?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:09:15]</span></p>
+        <p class="response">Well, but I will say, actually, in the 2019, let me just say it was also very united because people have, um, a slogan called 兄弟爬山 [brothers climb mountains together], right? Yeah. And then it means that even though people are, they essentially have different ideologies. Some people are more, again, peaceful, rational, non-violence. They keep that and some other people call themselves 勇武 [valiant/confrontational]. I'll find an English definition later. Um, which I've written in my thesis, but, um, they, they were like, we would tolerate that.</p>
+        
+        <p class="response">So it was, it was more like, because people are united in their course in asking the government about something, they have five demands. Um, people, even though, like, first thing was the Anti-extradition bill later on, it developed into five demands. Um, they kept united, but but then people have different ideologies. In 2014, it was very clear that everybody was for it. The peaceful, rational, non-violence. Right. And or at least most of the people And in 2019, it kind of diverged because one reason was that I think people knew that it didn't work in 2014.</p>
+        
+        <p class="response">And then there were more young people involved. Like it was in 2019. It was more like the older generation, the 30s and 40s and beyond. Were still into the peaceful, rational non-violence, although even myself were into it. But, um, I also felt like myself that I understand why people believe that they have to be more aggressive, more 勇武 and then, um, I think unless they do something really, um, extreme for instance, um, they attack people who disagree with them. So that is something that I didn't think was right. But, um, for instance, they were more confrontational.</p>
+        
+        <div class="note">
+            <strong>Context Break:</strong> The interview continues with a discussion about drawing lines between acceptable and unacceptable protest tactics. The participant discusses their evolving views on civil disobedience.
+        </div>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:13:12]</span></p>
+        <p class="response">Yeah, of course. No problem. And I'll promise I'll hand it over back to Iris after this last question, but, um, where do you think you would draw the line between—because, uh, you talked about how the vivid, uh, when they were going into the parliament and they were, uh, maybe desecrating the emblem, but not causing a lot of property damage. Where would you draw the line between, uh, somewhat regulated versus just you can't put up with this, and this is not something that you personally agree with?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:13:38]</span></p>
+        <p class="response">I think for myself, it is whether they do it with restraint. Like one, one, the first line is that whether they do it with restraint and whether, um, the cause is the main goal.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:13:51]</span></p>
+        <p class="response">How would you define restraint?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:15:25]</span></p>
+        <p class="response">Um, what was that? Kind of rage? They kind of do it with rage. They were angry. They wanted to retribute instead of advancing the cause. That is the five demands. Does that make sense?</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:15:37]</span></p>
+        <p class="response">So they were almost going after—they were doing this not for the cause, but almost to express some other emotions that they were feeling at the time. That's the—</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:15:46]</span></p>
+        <p class="response">Line I think that's the line that I would draw, because then it means that, um, you are simply expressing your anger or other emotions instead of advancing what you at first want to say, which is a democratic course that become not democratic. And that's when I think it's not okay. And of course, I don't think you could hurt people even like, I don't think you could, um, you could hit the person. You could just damage your property without a cause basically. Sorry. I'm repeating myself.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:16:18]</span></p>
+        <p class="response">Right. Um. Yeah. Thank you for the answer. Uh, Iris, if you want to take the next question, feel free to go ahead.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:16:25]</span></p>
+        <p class="response">Uh, yeah. Um, so I was just wondering, because you talked about how what you think about when you were a teenager is different from what you perceived, how you perceive the revolution from now. So, uh, how did your perception and opinion shift?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:16:55]</span></p>
+        <p class="response">Sorry, I missed that. You start over. Sorry.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:16:59]</span></p>
+        <p class="response">Oh, yeah. Yeah, sure, sure, sure. So because you talked about how your opinion shifted versus when you were a teenager versus right now. Uh, so I just want to know, like, did your understanding of political systems, dignity or justice or like, the revolution in general shift during the time or throughout your life?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:17:36]</span></p>
+        <p class="response">Okay. I think there were a few reasons. The first one is obviously, as I grew up, I read more about, um, politics, understand about what the democracy is, and understand what civil disobedience is. Understand? Um, like read more news. Understand more about how people try to achieve their demands. So this is the first thing, um, ideologically, ideology wise, I think I have a different understanding of justice. Um, well, not justice. I have different understanding of—um, what was that? Larry Diamond has some theories. I totally forgot I could read and send you later, but I have a different understanding of what means people could use to achieve the majority. So this is one thing. The second thing is obviously, um, after the [2014] movements.</p>
+        
+        <p class="response">You knew that even though people did it with fully peaceful means, fully rational expression, um, it didn't achieve anything. So in 2019, they were trying to use more aggressive demands to show that, um, but the kind of, I guess some people want to increase their bargain. They want to show that how determined they are. And they weren't willing to cease. They weren't willing to accept something less optimal. Um, and I think that determination is okay. I accept it. Because apparently some people also think that in 2014, people weren't determined or aggressive enough, and that led to the kind of failure or not failure, but not achieving their ultimate demands.</p>
+        
+        <p class="response">And so I think the outcome of 2014, the subsequent developments was something that, um, led to the change of my understanding of the events and of how things work.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:19:56]</span></p>
+        <p class="response">[Prompts for continuation]</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:20:12]</span></p>
+        <p class="response">I think in general, I become less idealistic. And that was just a personal thing. But I think also maybe other people became less idealistic after the 2014 thing. But, um, with after 2014, the development was that the government became more, um, they care less about the people. They care less about what people ask for. And then they were more restricted measures. I think, um, a lot of people got or that wasn't me, but a lot of people got more disillusioned with the, um, when Carrie Lam assumed power as the chief executive because, um, she was more kind of—well, everybody was pro-China, but, um, her stance was more, um, obvious in terms of, um, I would do whatever China says and not what you ask for. If—well, that's just what I think. But, um, I think that's what caused some people to change their views.</p>
+        
+        <p class="response">But for me, I think it was just because of the subsequent, including Carrie Lam assuming power. Obviously, that things were more restrictive. And I feel that if you don't if you're not more determined in terms of your action, I mean, people are obviously determined, but how much were people willing to risk, um, in achieving their demands?</p>
+        
+        <p class="response">And this is one thing that I want to add in terms of previously, how I would draw the line and why do I feel, um, more okay, why am I more tolerant in terms of the aggressive, um, things that the protesters did? Was that, um, they were people, um, when they were trying to break into the—July 1st thing, uh, to the Legislative Council. Um, the more peaceful, non-violent, uh, not rational, non-violent, um, council people like basically, um, they were like, um, don't do it because you would risk a riot charge and it would cost you ten years in prison. And they were like, we can accept that. Um, to achieve our cause. Um, we would be okay to get arrested and as long as we can express what we mean, and I think these kind of things that people are willing to risk and with self-restraint.</p>
+        
+        <p class="response">Obviously, were something that I respect because I personally wouldn't go that far. Um, I personally to peaceful protest, but I wouldn't want to risk my future. Um, getting so because of, um, the solidarity. The kind of dedication people gave was something that sort of changed my perspective. And I think that if they're willing to risk themselves, um, why would I say that they're wrong? Because, like, who am I to judge? I'm just one person in the whole city. And if, like, the mass public, a lot of people think that it is okay and that is within the democratic cause, I feel like, who am I to judge? Right?</p>
+        
+        <div class="context-box">
+            <h4>Historical Context: Benny Tai (戴耀廷)</h4>
+            <p>During this section, the participant references Professor Benny Tai, a Hong Kong legal scholar and democracy activist who served as an Associate Professor of Law at the University of Hong Kong until his dismissal in 2020. Tai co-founded the 2014 Occupy Central movement and organized the 2020 pro-democracy primaries. He was sentenced to 10 years in prison in 2024 under the National Security Law for "conspiracy to commit subversion."</p>
+            <p>Tai's interpretation of the rule of law emphasized that law should serve justice and bind both citizens and institutions, preventing abuse of power rather than simply maintaining order.</p>
+        </div>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:23:25]</span></p>
+        <p class="response">Well, uh, one thing that was interesting to me, uh, if you don't mind, is the idea or the person that you brought up, I think it's Larry Diamond. And what is your understanding? What is the social contract between the people and maybe the regime? And what means can people use to achieve maybe a more idealistic system, a system that's more catered to their needs?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:23:48]</span></p>
+        <p class="response">Okay, I forgot everything about Larry Diamond. Can you give me an overview of what you think he expressed because I don't remember him talking about the social contract.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:23:58]</span></p>
+        <p class="response">All right, not just Larry Diamond specifically, I guess, but your personal understanding of—because you talked about your understanding of what means people are allowed to use sort of shifted, um, from your teenage to adult years. Um, and I guess my question is, uh, what do you think now are the acceptable means for people, not just maybe in Hong Kong, but maybe in any country? What are citizens allowed to use? Not allowed to use to achieve and advance their own goals?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:24:26]</span></p>
+        <p class="response">I think peaceful protests. I think definitely first thing is everything within the European Convention of Human Rights. So peaceful assembly. These things are like, for instance, in Hong Kong now, they wouldn't even grant a permission for people to assemble peacefully. They wouldn't even grant, um, permission for people to demonstrate, um, to protest. So I think by gathering, by assembly, they already are breaking the law. So when I was younger, I would think that breaking the law was unacceptable. Because, well, I was taught that was how I was raised. Um, in the within the Hong Kong education system, we think that we, we respect the rule of law. And, um, just think that by abiding to the rules, um, it is something that I ought to do as a citizen.</p>
+        
+        <p class="response">But, um, as I grow older, um, I realised—um, you should look for it. It's, um, normally when we talk about it, we will talk about Bingham. We would also talk about Dicey. But, um, Professor Benny Tai, who is now, um, in jail. He gave um, uh, let me Google it. I don't exactly remember the whole thing.</p>
+        
+        <div class="note">
+            <strong>Brief pause while participant searches for reference</strong>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:26:37]</span></p>
+        <p class="response">So the first thing is—this is from Professor Benny Tai. So basically, he was saying the rule of law is to achieve justice. It's not just to keep people in check. It's not just to maintain a civil society. It is to—well, it is kind of to maintain a civil society. But also not within the citizens, but with the institutional power. So it's not just to—the rule of law is not just to bound the citizens, but it's also to bound the institution, the people in power to prevent abuse. And the fourth one is apparently to achieve justice.</p>
+        
+        <p class="response">So I would realise that to have laws, these laws have to be—well, they have to be, they have to have morals. But who am I to say what the moral is? But I think I personally think that there is kind of a more objective idea of what justice is, and that would be within Professor—who was there? A theory of justice? Um, let's see, what was that? John Rawls?</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:28:00]</span></p>
+        <p class="response">Right, Rawls.</p>
+        
+        <div class="context-box">
+            <h4>Philosophical Context: John Rawls (1921-2002)</h4>
+            <p>John Rawls was an American political philosopher known for his work "A Theory of Justice" (1971). His key concepts include:</p>
+            <ul>
+                <li><strong>Original Position & Veil of Ignorance:</strong> A thought experiment where people design society without knowing their place in it, ensuring fairness</li>
+                <li><strong>Two Principles of Justice:</strong> Equal basic liberties for all, and social/economic inequalities must benefit the least advantaged</li>
+                <li><strong>Justice as Fairness:</strong> Society should be structured to be fair to all members, with priority of liberty over economic considerations</li>
+            </ul>
+            <p>Rawls also wrote about civil disobedience as a public act of conscience aimed at bringing about change in unjust laws or policies, directly relevant to the Hong Kong protests.</p>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:28:01]</span></p>
+        <p class="response">Kind of in general agree with what Rawls said about what justice is. And I think the rule of law kind of, um, we want to achieve that. So this is something I think people could do by even breaking the law in peaceful assembly. This is the first thing definitely is allowed. But further on, I would go as far as—as long as people don't hurt, like they don't cause damage to property, they don't hurt other people, they don't, um, doing more aggressive things such as barricading, um, such as occupying the, um, the Legislative Council for instance. Even, um, kind of going after the police, like, as in being confrontational in the front line of the protest were okay. But I don't think what I personally would draw a line between causing harm to others.</p>
+        
+        <p class="response">While causing harm to the institutions are fine. Basically, institutions in terms of government, police, like some harm are allowed as long as it doesn't hurt with persons like people safety. But in terms of other people, the general public and other private institutions, I think the line I personally would draw is not to cause harm, not to cause direct physical harm.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:29:28]</span></p>
+        <p class="response">Um, so you referred to the professor you talked about, like you said? Uh, she was in jail, but, like, for what I think his reasons are, like, well, like, quite reasonable.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:29:44]</span></p>
+        <p class="response">Oh, yeah. No no, no. Actually, it was the 2019 aftermath. Um, it was not related to the 2014 protest or his idea for rule of law, but—oh, he was trying to—let me Google the name of it. Let me actually quickly ask—</p>
+        
+        <div class="note">
+            <strong>Brief pause for research</strong>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:31:51]</span></p>
+        <p class="response">I muted. Uh, where was I? Um, basically there were something called the [democratic primaries] and what they were trying to do is to run the Democratic primary so that, um, before that people could because, um, Hong Kong has a proportional vote system. So if, um, if there are more democratic can[didates]—[they would have more seats]. They would reject that. And then the government basically say that, um, they enacted the national security law afterwards. And they say that that, um, this primary is part of 顛覆 [subversion]. So because they were saying, if you want to reject the financial bill, it means that you were trying to kind of throw—freeze what the government can do.</p>
+        
+        <p class="response">And this is already the way. So they were prosecuted for that. And now he is in jail for ten years.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:34:04]</span></p>
+        <p class="response">Oh, I see, I see, yeah.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:34:07]</span></p>
+        <p class="response">You can Google that. It's all online. And then with the two names I put on, you could already find everything, but, yeah.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:34:16]</span></p>
+        <p class="response">What does it mean for these people to go to jail? Is their career just gone? And they can't stay in Hong Kong or what happens to them afterwards?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:34:23]</span></p>
+        <p class="response">I think they can stay in Hong Kong. But, um, they will still be prosecuted for other things. Um, so that I think in general, um, Professor Benny Tai, basically he, he didn't have his tenure anymore, so he was no longer a professor. Um, what else? There were ten things that Benny Tai proposed with the primary, but I can't find it. I'll find it later and send it to you. Um, but, um, for a lot of people, it means that they can no longer run for council. And now some people are out of jail because some people are not. Um, basically, they were 47 people who were prosecuted by participating in the primaries. And only one, two persons were acquitted. So 45 persons were convicted and were in jail for the primaries. And then, um, basically what they mean is one of them is out. Um, <span class="redacted">[personal connection redacted]</span> knows him personally and he was saying he cannot find a job.</p>
+        
+        <p class="response">Um, and people cannot, um, <span class="redacted">[personal connection redacted]</span> works for, uh, a non-governmental organisation, works for a charity, and basically, um, they investigated whether they could, um, hire these people, and they know the consensus is that if they hire these people, their funds would all be frozen, like people would—the government would no longer fund them. So they cannot hire them. So basically it means that they won't have a career. They kind of won't have a future, if you can say that.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:35:51]</span></p>
+        <p class="response">Right, okay. Got it.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:35:54]</span></p>
+        <p class="response">So do you think—because even government restricted if those people got arrested, can't have a job anymore. Do you think running for parliament is still democratic?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:36:10]</span></p>
+        <p class="response">Because, um, this is even before the prosecution. So basically, even in 20—where was it? Let me Google. There was something called—let me let me quickly ask—</p>
+        
+        <div class="note">
+            <strong>Pause for research on electoral disqualifications</strong>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:36:59]</span></p>
+        <p class="response">So there's something called—before, um, basically, people were trying to run for council seats, and then, um, they were asked to sign an agreement to say that they support Hong Kong government. They would not advance for Hong Kong independence. And all that. They have to sign a thing saying that, um, this is my stance. But after they signed it, some people signed it and run. Um, basically the person running the election, they disqualified them—basically to say that, um, you cannot run because we don't think, um, you are sincere in signing the agreement. We think that you want Hong Kong independence, and that's not within—then you don't, you're not qualified to run for election.</p>
+        
+        <p class="response">So that was something that happened to a lot of people. Um, somebody called 陳浩天 [Chan Ho-tin] I think was one of the first one. And then subsequently a few and a lot of people. So with that, basically people already cannot run. So it was and now obviously these people, these people obviously cannot run anymore. But before that a lot people already couldn't run. And so in the subsequent election, I think in 2020 or 2021, basically nobody in the Democratic camp could run. Some people from [pro-democracy camp] still try to apply, and they were disqualified.</p>
+        
+        <p class="response">So, um, basically everybody running was pro-government. And for myself and for a lot of people I know that, um, we decided not to go to vote because, um, we don't have anyone to vote for. And, um, also people were arrested for asking people to vote by, uh, again, you have to find English for it. Basically it is, um, you go for voting, but you don't vote for any candidate. Um, a blank vote basically. And, um, people were asking people online, they were promoting this thing, and they were arrested for, again—also.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:39:28]</span></p>
+        <p class="response">I think I see.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:39:30]</span></p>
+        <p class="response">Wait, wait, let me find—you need to find the crime itself. But if you find blank vote, if you can't find it, email me. But basically they were arrested and they were convicted.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:39:53]</span></p>
+        <p class="response">Um, after all of this, I guess one of the questions that I had was, you know, in the aftermath of this, um, what has this done to the maybe young people of Hong Kong? How do they—what are the people that remained? How do they view the situation? What do you think has changed about maybe compared to 2014, when people were very, very involved in civil discourse? How did that sort of change throughout the past decade?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:40:20]</span></p>
+        <p class="response">I think the first thing is that people are disillusioned. Um, after the 2019 thing, um, the UK and Canada both offered schemes for people to migrate to Canada in the UK, um, as part of like supporting people. They were basically, um, the BNO plan and the Canada lifeboat plan. So a lot of people left. Basically, they felt that there's no future in Hong Kong, and they left. And then a lot of people, including my friends and some people, they are in Hong Kong, but they stop caring. They focus on their career. Um, because they know that there's nothing they can do. So I think people are in general, more—</p>
+        
+        <div class="note">
+            <strong>Technical note:</strong> The meeting was scheduled to end in 15 minutes at this point. Participant notes they can send another link if needed.
+        </div>
+        
+        <p class="response">Basically, people were more disillusioned. Um, one term we have is 搵食啦/搞飯啦 [just focus on making a living]. And that means people were only focussed on [earning money]. So this is what I think most people kind of changed because they felt powerless. And well, for me, I wouldn't focus on that, but I would focus on finding career, finding something else that could help people. So, for instance, some people change to doing soft, um, kind of soft demands. For instance, asking for gay rights. These things are still within something they could demand.</p>
+        
+        <p class="response">Um, in the system, you can't demand for anything political, as in, in terms of within the government or changing or asking for democracy. But you can still do something that is related to soft human rights. Such as gay rights. So some people do that. Um, personally I also want to advance minority rights such as racial minority, people with disability, LGBTQ. That I care about but, um, a lot of other people, I think they just kind of stop caring.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:42:32]</span></p>
+        <p class="response">Um, are you still in Hong Kong currently?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:42:34]</span></p>
+        <p class="response">Um, yes. I'm still in Hong Kong.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:42:37]</span></p>
+        <p class="response">What made you stay in Hong Kong after all this?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:42:40]</span></p>
+        <p class="response">I also are thinking about leaving.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:42:43]</span></p>
+        <p class="response">Got it.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:42:44]</span></p>
+        <p class="response">But I'm still thinking, um, basically, um, doing a law degree. Um, after that, I could decide to—I may leave to the UK to be a lawyer, or I would stay in Hong Kong as a lawyer. Um, I would have to explore my career options. So, um, in Hong Kong, it's kind of—it's not idealistic anymore. You just kind of feel powerless. And this is something that makes you want to leave. But in the meantime, you view that the community is still there. There's still people that you want to help. And it's kind of like you call home. So I lived in the UK before, right? Um, it's very different. Um, it's whether the climate, weather, the community and there are the reasons to stay, basically. Um, whether the people we know, whether we still believe in the city, even though I don't think I can do anything, um, in terms of advancing democracy, I still feel that, um, as a lawyer, maybe there's something I could do for vulnerable people, but that's just me.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:43:49]</span></p>
+        <p class="response">What is your relationship with the rule of law? After you know, um, after the sort of events that made you call it into question as a lawyer—</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:44:01]</span></p>
+        <p class="response">Do you mean the relationship?</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:44:02]</span></p>
+        <p class="response">I would assume you would feel maybe a little bit more, uh, how do I phrase this? Maybe a little bit more doubtful of the law. How—I mean, as a lawyer, how do you maybe reconcile that? Like you have to operate within the rule of law?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:44:21]</span></p>
+        <p class="response">I think I would go as far as saying I don't think Hong Kong has the rule of law anymore. Because the rule of law—one thing I think is part of it, whether maybe not—if you want, I could find the name of the guy, but human rights is within one of them. And without the right to protest, you don't have human rights. And without people participating in, um, when the law is used to oppress people, basically, they use national security law. They use, um, other laws, such as, um, what are the laws? They have the riot charge. Um, to prosecute political, um—well, they call it criminals, but, um, find the best translation for it. I won't call them criminals, but, um, basically, um, when the law is used to oppress people, I don't think there is actually rule of law. They might be rule, but I might even call it rule by law. So as a lawyer, I would think that it's not great. But—and whether Hong Kong still has an independent judiciary is something that I constantly question.</p>
+        
+        <p class="response">But I have worked with judges before as an intern. And I think that, um, when it comes to non-political cases, they do still do it with impartiality. And, and and, um, well, in a common law system, you kind of the judges have to follow case laws and they have to right long judgements to, um, explain how they rule, um, to give the whole reasoning and, um, legal principles to apply. And I think these things still happen. And I think as lawyer, um, as someone who cares about Hong Kong and I would at least want these things to remain, if that makes sense.</p>
+        
+        <p class="speaker interviewer">RONALD <span class="timestamp">[00:46:25]</span></p>
+        <p class="response">Yeah, definitely. Well, okay. Thank you so much for the interview. Um, Iris, if you want to continue asking more questions, that would be great. Um, I'm really sorry about this, but I have an obligation, so I'll probably leave the meeting, but thank you so much for all the answers. It was incredibly helpful.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:46:42]</span></p>
+        <p class="response">Yeah. Um, thank you so much. I'll just move on to maybe 2019. Or is there anything like any moment where you feel like particularly present or moved during 2014?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:46:59]</span></p>
+        <p class="response">2014 or 19?</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:47:01]</span></p>
+        <p class="response">Oh, like 14, which is in 14 with this question?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:47:05]</span></p>
+        <p class="response">Um, 14 I think, um, is when people, um, they were when the police were saying, we will arrest you if you don't leave. Basically. And then people were sitting in the protest site and they were like, we would remain here. So that the police kind of—um, sorry, my English is really bad. Um, this is the moment that was particularly moved. They were like, even if we get arrested, we would stay in the course. So I see the length people were willing to go, um, for the city, not for themselves, because obviously, advancing the democracy is for the city. And that was something that really moved me.</p>
+        
+        <p class="response">And, oh, I was also really moved when, um, there were public lectures. So the public intellectuals come over to the protest site and give talks and engage with people, give lectures and or even what they call seminars so that people engage with these intellectuals and talk about what democracy means to them. Um, how the citizens participate in social movements, these kind of things. Um, also really moved me because I feel that Hong Kong is such an intellectual place. It's such a rational place. It's so civil that, um, even within protest, people have an ideology. People want to be well—not just rational, but people want to be intellectually engaged. And they want to maintain a clear mind and ideals. So this is something that really moves me.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:48:50]</span></p>
+        <p class="response">Oh, I see, I see, um, how about 2019?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:48:55]</span></p>
+        <p class="response">In 2019, I think a particular moment is that there's probably a picture online. Let me find it. Um, basically, the people are saying they were, um, uh, a million people. Million people participating in the protest. This is the picture. Let me see if I could send it to the group, or I will send a link. Actually.</p>
+        
+        <div class="note">
+            <strong>Visual reference:</strong> Participant shares an image of the massive June 2019 protest in Hong Kong showing crowds filling the streets.
+        </div>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:49:38]</span></p>
+        <p class="response">Let me open it. Yeah, I see, yeah, I've seen that.</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:49:51]</span></p>
+        <p class="response">I went to this protest basically. I was also there and it was really crowded and, um, seeing the pictures, seeing that it really moved me. And there were two of these.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:50:04]</span></p>
+        <p class="response">Oh, so you were present at the protest?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:50:07]</span></p>
+        <p class="response">Yeah, I was at the protest. Basically, um, my personal involvement is that, um, whether it was June 12—let me Google.</p>
+        
+        <div class="note">
+            <strong>Brief pause for date confirmation</strong>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:51:15]</span></p>
+        <p class="response">It is the second reading of the bill, which is the 12th of June. So a lot of people were outside the Legislative Council to protest. So I was there. That was the first time I went to the 2019 protest. And then subsequently, um, I attended most of the peaceful ones. Like the big ones.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:51:42]</span></p>
+        <p class="response">Okay. Oh, um, so what was your feeling throughout those protests that you attended?</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:51:54]</span></p>
+        <p class="response">I think—well, in the first ones, um, I was kind of moved because I felt that, oh, people really care about the city. And, oh, Hong Kong people—um, is the financial centre, but, oh, people don't just care about money. People have ideas and they care about being a community together that can express their views. And that's something that's important to me. Um, I think that was the first feeling. Second feeling was that, um, I was actually feeling bored because, um, in 2014, a lot of things were going on at protest site. But in 2019, um, in the first few protests, um, people were just sitting there and yeah, I felt bored. But I also felt that I ought to be there because this is something that I believe in. Um, so the first few and then but after afterwards, because, um, the June 12th one, um, I was just basically sitting outside council with nothing to do.</p>
+        
+        <p class="response">We weren't walking. Um, well, some people were, um, having some conversations with the police, but I was just sitting there, so, um, I somehow know that I'm connected to those people, but, um, I personally wasn't doing anything active. So that was something. But, um, in the later ones, in the big one with the million people I forgot, when was it?</p>
+        
+        <div class="note">
+            <strong>Participant continues recounting their protest experiences</strong>
+        </div>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:53:30]</span></p>
+        <p class="response">That was—oh, wait. I also went to the 9th June. Oh, that was the first protest. So I went to that one first. Oh, I remember now. So, um, 9th of June, a lot of people went to the protest, but they decided the government decided to continue with the second reading of the bill in 12th of June. So I first went to the 9th of June to say that I don't agree with this bill. Um, and a lot of people also went and that felt very empowering. I would say. I feel empowered because, um, because of the people around me who were all very willing to spend their time to express their views and even after 2014, I feel that people weren't that disillusioned. People were willing to participate again. So that was something that really moved me in the 9th of June. And then but then the government was saying that we have to do the second reading. And then that was when I also went outside the council to say that, well, I disagree, but that one was boring because I didn't do anything.</p>
+        
+        <p class="response">And then after that, in the weekend, um, it was 16 of June and they were another protest. So that was also very empowering. These were the big ones. And then, um, in the 1st of July, um, I also felt again, very empowered. This is the word I would use. Um, because of the length people would go, um, in kind of trying to occupy the Legislative Council in doing—again, well, I'm very idealistic. Maybe other people aren't like me, but, um, as someone who is really—I enjoy studying, I enjoy studying the theory of justice. I enjoy studying Larry Diamond's and John Rawls. So I feel that people are—well, I feel that people are democratic or people are part of a democratic society, a part of a civil society. And that was, um, the—I think that longer as.</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:55:26]</span></p>
+        <p class="response">I see. Um, so you were saying you were moved by those events in 2019, but you still but you also say, like people are less idealistic. So, like, how do you—</p>
+        
+        <p class="speaker">ANON <span class="timestamp">[00:55:56]</span></p>
+        <p class="response">What do you mean?</p>
+        
+        <p class="speaker interviewer">IRIS <span class="timestamp">[00:55:58]</span></p>
+        <p class="response">Um, because you were saying, like, in 2014, people are more idealistic and moving—</p>
+        
+        <div class="note">
+            <strong>End of First Session</strong> - Total Duration: ~57 minutes<br>
+            <em>A second session continues with further discussion about solidarity, tolerance, and the participant's evolving views. The second session transcript is available separately.</em><br><br>
+            Transcribed: [Date Redacted]<br>
+            Anonymized: [Date Redacted]<br>
+            Review Status: Approved for research use with privacy protections
+        </div>
+        
+        <div class="note">
+            <strong>Key Themes Discussed:</strong>
+            <ul>
+                <li>Evolution from teenage skepticism to adult support of democratic movements</li>
+                <li>Differences between 2014 Umbrella Movement (和理非 - peaceful, rational, non-violent) and 2019 protests (including 勇武 - confrontational tactics)</li>
+                <li>Concept of 兄弟爬山 (brothers climb mountains together) - tolerance across tactical differences</li>
+                <li>Influence of Benny Tai's rule of law theory and John Rawls' theory of justice</li>
+                <li>Personal boundaries on acceptable civil disobedience</li>
+                <li>Post-2019 disillusionment and mass emigration (BNO/Canada schemes)</li>
+                <li>Challenges to Hong Kong's rule of law and judicial independence</li>
+                <li>Career considerations as a law student in post-National Security Law Hong Kong</li>
+                <li>Shift from political activism to "soft" human rights advocacy (LGBTQ, minority rights)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
